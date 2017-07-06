@@ -31,6 +31,17 @@ public class InsertSort {
     }
 
 
+    public static void binInsertSort(int[] arr , int lo , int hi) {
+        if (lo < 0 || hi > arr.length || lo > hi){
+            throw new IllegalArgumentException("边界有问题");
+        }
+
+        int mid = (lo + 1 + hi)/2;
+        if (arr[mid] < arr[lo]) {
+
+        }
+    }
+
     public static void traversal(int[] arr) {
         System.out.println();
         for (int i : arr) {
