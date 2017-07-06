@@ -1,0 +1,48 @@
+{
+   "CTNM": {
+    "fieldName": "CTNM",
+    "required": true
+  },
+  "SMID": {
+    "fieldName": "SMID",
+    "required": true,
+    "regex": "^\\d+$"
+  },
+  "CITP": {
+    "fieldName": "CITP",
+    "required": true
+  },
+  "CTID": {
+    "fieldName": "CTID",
+    "required": true
+  },
+  "CTAR": {
+    "fieldName": "CTAR",
+    "required": true
+  },
+  "CCTL": {
+    "fieldName": "CCTL",
+    "required": true
+  },
+  "CEML": {
+    "fieldName": "CEML",
+    "required": true,
+    "regex": "^\\w+@\\w+\\.\\w+$"
+  },
+  "CTVC": {
+    "fieldName": "CTVC",
+    "required": true
+  },
+  "CRNM": {
+    "fieldName": "CRNM",
+    "required": true
+  },
+  "CRIT": {
+    "fieldName": "CRIT",
+    "required": true
+  },
+  "CRID": {
+    "fieldName": "CRID",
+    "required": true
+  }
+}

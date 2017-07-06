@@ -1,0 +1,15 @@
+{
+  "TEST": {
+    "fieldName": "TEST",
+    "required": true,
+    "alias": ["TEST1", "测试", "测试1" ],
+    "length": [  3,   5 ],
+    "range": [   100,  999 ],
+    "dateRange" : ["2017-05-06","2017-08-09"],
+    "regex": "^\\d+$",
+    "optItems": [ "aaa", "bbb",  "ccc" ],
+    "dictLevel": 2,
+    "dictParentId": "55",
+    "validateMethod": "ValidateCTIF.validateCTIF_TEST"
+  }
+}
