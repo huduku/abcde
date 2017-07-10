@@ -24,6 +24,8 @@
         <module>abcde-dfl</module>
         <module>abcde-algorithm</module>
         <module>abcde-samples</module>
+        <module>abcde-collections</module>
+        <module>abcde-collections</module>
     </modules>
 
     <build>
