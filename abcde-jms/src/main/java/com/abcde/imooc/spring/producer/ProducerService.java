@@ -1,4 +1,4 @@
-package com.abcde.imooc.spring;
+package com.abcde.imooc.spring.producer;
 
 
 

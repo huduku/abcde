@@ -12,5 +12,7 @@
         <property name="connectionFactory" ref="connectionFactory" />
     </bean>
 
-    <bean class="com.abcde.imooc.spring.ProducerServiceImpl" />
+    <bean id="producerQueueService" class="com.abcde.imooc.spring.producer.ProducerServiceImpl" />
+
+    <bean id="producerTopicServiceImpl" class="com.abcde.imooc.spring.producer.ProducerTopicServiceImpl" />
 </beans>

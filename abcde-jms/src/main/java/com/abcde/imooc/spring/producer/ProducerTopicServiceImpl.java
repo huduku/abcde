@@ -1,4 +1,4 @@
-package com.abcde.imooc.spring;
+package com.abcde.imooc.spring.producer;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,13 +8,13 @@ import org.springframework.jms.core.MessageCreator;
 
 import javax.jms.*;
 
-public class ProducerServiceImpl implements ProducerService{
+public class ProducerTopicServiceImpl implements ProducerService{
 
     @Autowired
     private JmsTemplate jmsTemplate;
 
     @Autowired
-    @Qualifier("queueDestination")
+    @Qualifier("topicDestination")
     private Destination destination;
 
     @Override
