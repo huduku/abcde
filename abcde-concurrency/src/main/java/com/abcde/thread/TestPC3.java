@@ -32,7 +32,7 @@ public class TestPC3 {
         private int product = 0 ;
 
         //进货
-        public void get () {
+        public void getProduct () {
             lock.lock();
             try {
                 while (product >= 1) {
@@ -88,7 +88,7 @@ public class TestPC3 {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                clerk.get();
+                clerk.getProduct();
             }
         }
     }
