@@ -1,11 +1,14 @@
 package com.abcde.algorithm;
 
 
-
+/**
+ * 打印字符串全排列
+ */
 public class StrFullPermutation {
 
     public static void main(String[] args) {
-        fullPermutation("test");
+
+        fullPermutation("abcd");
     }
 
 
@@ -19,22 +22,29 @@ public class StrFullPermutation {
         }
     }
 
-    public static void permutation(char[] str, int i) {
-        if (i >= str.length)
+    /**
+     *
+     * @param cArr 待打印全排列的字符串的字符数组
+     * @param i
+     */
+    public static void permutation(char[] cArr, int i) {
+        if (i >= cArr.length) // 递归出口
             return;
-        if (i == str.length - 1) {
-            System.out.println(String.valueOf(str));
+        if (i == cArr.length - 1) { //当递归到数组中的最后一个元素时，打印数组
+            System.out.println(String.valueOf(cArr));
         } else {
-            for (int j = i; j < str.length; j++) {
-                char temp = str[j];
-                str[j] = str[i];
-                str[i] = temp;
+            for (int j = i; j < cArr.length; j++) {
+                //交换前缀
+                char temp = cArr[j];
+                cArr[j] = cArr[i];
+                cArr[i] = temp;
 
-                permutation(str, i + 1);
+                permutation(cArr, i + 1);
 
-                temp = str[j];
-                str[j] = str[i];
-                str[i] = temp;
+                //将前缀交换回来
+                temp = cArr[j];
+                cArr[j] = cArr[i];
+                cArr[i] = temp;
             }
         }
     }
