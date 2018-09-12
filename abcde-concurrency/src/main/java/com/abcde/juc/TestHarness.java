@@ -1,4 +1,4 @@
-package com.abcde.thread;
+package com.abcde.juc;
 
 import java.util.concurrent.CountDownLatch;
 
