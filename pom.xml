@@ -30,7 +30,7 @@
         <module>abcde-jms</module>
         <module>abcde-zk</module>
         <module>abcde-validator</module>
-    <   module>abcde-convertor</module>
+        <module>abcde-convertor</module>
     </modules>
 
 
