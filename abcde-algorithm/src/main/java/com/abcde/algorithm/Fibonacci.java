@@ -3,6 +3,7 @@ package com.abcde.algorithm;
 public class Fibonacci {
 
 
+    // ---------------------------------- 1 start--------------------------
     public static int fib(int N) {
         if (N < 1)
             return 0;
@@ -19,9 +20,26 @@ public class Fibonacci {
         return memo[n];
     }
 
+    // ---------------------------------- 1 end--------------------------
+
+    // ---------------------------------- 2 start--------------------------
+    public static int fibDp(int N) {
+        int[] dp = new int[N+1];
+        dp[1] = dp[2] = 1;
+        for (int i = 3; i < N+1; i++) {
+            dp[i] = dp[i-1] + dp[i-2];
+        }
+        return dp[N];
+    }
+
+    // ---------------------------------- 2 end--------------------------
+
+
+
     public static void main(String[] args) {
         int fib = fib(20);
         System.out.println(fib);
+        System.out.println(fibDp(20));
     }
 
 }
